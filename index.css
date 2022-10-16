@@ -42,8 +42,8 @@ body,html {
     display:block;
 }
 #title {
-    font-size:40px;
-    background-image: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
+    font-size:100px;
+    background-image: linear-gradient(to left, #fff 0%, #fff 100%);
     -webkit-background-clip:text;
     background-clip:text;
     -webkit-text-fill-color: transparent;
@@ -53,14 +53,16 @@ body,html {
     -o-animation: Gradient 20s ease infinite;
     animation: Gradient 20s ease infinite;
     font-family: 'Comfortaa', cursive;
+    width: 60%;
 }
 #links {
-    margin:40px 0px;
-    transition:0.6s ease-in-out;
-    color:#fff;
+    margin: 0px 0px;
+    transition: 0.2s ease-in-out;
+    color: #fff;
+    font-size: 40px;
 }
 #links a {
-    margin:0px 30px;
+    margin:0px 0px;
     color:inherit;
     text-decoration:none;
     transition:0.4s ease-in-out;
@@ -73,7 +75,7 @@ body,html {
 #middle {
     width:100%;
     height:80vh;
-    background:linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0)),url("https://images.unsplash.com/photo-1494587351196-bbf5f29cff42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&&w=1351&q=80") center center fixed;
+    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0)),url("Background.png") center center fixed;
     background-size:100% auto;
     background-repeat:no-repeat;
     color:white;
@@ -86,6 +88,10 @@ body,html {
 #tagline {
     font-size:50px;
     width:60%;
+}
+#tagline2 {
+    font-size: 20px;
+    width: 100%;
 }
 #portfolio {
     width:80%;
