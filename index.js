@@ -30,4 +30,13 @@ setTimeout(function(){
       $("#loading").removeClass("animated fadeOut");
       $("#loading").css("display","none");
     },800);
-},1450);
+}, 1450);
+
+function DoDownload(url) {
+    const a = document.createElement('a')
+    a.href = url
+    a.download = url.split('/').pop()
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+}
